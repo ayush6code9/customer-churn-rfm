@@ -1,0 +1,39 @@
+# ==========================================================
+# Retail & Marketing Analytics Project
+# Python Version: 3.11+
+# ==========================================================
+
+# Core Data Analysis
+numpy==2.3.1
+pandas==2.3.1
+
+# Data Visualization
+matplotlib==3.10.3
+seaborn==0.13.2
+plotly==6.2.0
+
+# Scientific Computing
+scipy==1.16.0
+
+# Machine Learning
+scikit-learn==1.7.0
+joblib==1.5.1
+threadpoolctl==3.6.0
+
+# Market Basket Analysis
+mlxtend==0.23.4
+
+# Jupyter Environment
+jupyter==1.1.1
+notebook==7.4.4
+ipykernel==6.30.0
+ipywidgets==8.1.7
+
+# Excel Support
+openpyxl==3.1.5
+
+# Dataset Download
+kagglehub==0.3.12
+
+# Progress Bars
+tqdm==4.67.1
