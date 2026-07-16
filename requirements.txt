@@ -44,24 +44,19 @@ tqdm==4.67.1
 streamlit==1.59.2
 
 # ==========================================================
+# Model Tuning, Explainability, and Testing (Notebook 06)
+# ==========================================================
+xgboost==3.3.0
+shap==0.52.0
+pytest==9.1.1
+
+# ==========================================================
 # FUTURE ENHANCEMENTS (uncomment as needed)
 # ==========================================================
-
-# Model Explainability - SHAP values for churn model
-# shap==0.52.0
-
-# Gradient Boosted Trees - alternative/upgrade to Random Forest
-# xgboost==3.3.0
 
 # Time Series Forecasting - revenue/demand forecasting
 # statsmodels==0.14.6
 # prophet==1.1.6
-
-# Statistical Testing - significance testing on segment differences
-# scipy.stats is already included above via scipy
-
-# Testing / CI - unit tests for data pipeline and model code
-# pytest==9.1.1
 
 # Model Deployment - lightweight API for the churn model
 # fastapi==0.118.0

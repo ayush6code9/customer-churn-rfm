@@ -2,12 +2,19 @@
 CHURN PREDICTION MODEL - BUSINESS SUMMARY
 ================================================================================
 
-MODEL PERFORMANCE (Random Forest, Test Set):
-  - ROC-AUC: 0.924
-  - Precision (Churned class): 0.387
-  - Recall (Churned class): 0.898
-  - F1 Score (Churned class): 0.541
+SELECTED MODEL: Random Forest (tuned)
+  - Test ROC-AUC: 0.951
+  - Precision (Churned class): 0.529
+  - Recall (Churned class): 0.932
+  - F1 Score (Churned class): 0.675
   - Baseline accuracy (majority class): 0.881
+
+MODEL COMPARISON:
+                    Model  Test_ROC_AUC  CV_ROC_AUC_Mean
+Baseline (majority class)           NaN              NaN
+      Logistic Regression        0.9068           0.9042
+    Random Forest (tuned)        0.9510           0.9359
+                  XGBoost        0.9461           0.9376
 
 CHURN OVERVIEW:
   - Overall churn rate: 11.88%
@@ -15,21 +22,21 @@ CHURN OVERVIEW:
 
 REVENUE AT RISK:
   - High-risk customers (top 20% by predicted probability): 398
-  - Historical revenue represented: $124,221.86 (11.52% of total)
+  - Historical revenue represented: $127,162.08 (11.79% of total)
 
 TOP CHURN DRIVERS:
-  - Lifespan_Days: 0.363
-  - Purchase_Frequency: 0.134
-  - CLV_Simple: 0.088
-  - Total_Sales: 0.058
-  - Monetary: 0.055
+  - Lifespan_Days: 0.808
+  - Avg_Profit: 0.031
+  - Avg_Order_Value: 0.027
+  - Avg_Discount: 0.026
+  - CLV_Simple: 0.020
 
 RECOMMENDATION:
-  Prioritize retention outreach (win-back offers, personalized re-engagement) toward the
-  398 customers flagged as high-risk, rather than treating all customers
-  uniformly. Given the model recall of 89.8%, expect that some churned
-  customers will still be missed - this model should support, not replace, the existing
-  RFM-based segmentation from Notebook 04.
+  Prioritize retention outreach toward the 398 customers flagged as
+  high-risk. Given the model recall of 93.2%, expect some churned customers
+  to still be missed - this model should support, not replace, the existing RFM-based
+  segmentation from Notebook 04. SHAP explanations for individual customers are available
+  in outputs/figures/ for use in retention team conversations.
 
-Report Generated: 2026-07-16 02:38:15
+Report Generated: 2026-07-17 01:53:18
 ================================================================================
