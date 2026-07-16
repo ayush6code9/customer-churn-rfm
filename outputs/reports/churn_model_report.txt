@@ -1,0 +1,35 @@
+
+CHURN PREDICTION MODEL - BUSINESS SUMMARY
+================================================================================
+
+MODEL PERFORMANCE (Random Forest, Test Set):
+  - ROC-AUC: 0.924
+  - Precision (Churned class): 0.387
+  - Recall (Churned class): 0.898
+  - F1 Score (Churned class): 0.541
+  - Baseline accuracy (majority class): 0.881
+
+CHURN OVERVIEW:
+  - Overall churn rate: 11.88%
+  - Churn definition: no purchase in the last 180 days
+
+REVENUE AT RISK:
+  - High-risk customers (top 20% by predicted probability): 398
+  - Historical revenue represented: $124,221.86 (11.52% of total)
+
+TOP CHURN DRIVERS:
+  - Lifespan_Days: 0.363
+  - Purchase_Frequency: 0.134
+  - CLV_Simple: 0.088
+  - Total_Sales: 0.058
+  - Monetary: 0.055
+
+RECOMMENDATION:
+  Prioritize retention outreach (win-back offers, personalized re-engagement) toward the
+  398 customers flagged as high-risk, rather than treating all customers
+  uniformly. Given the model recall of 89.8%, expect that some churned
+  customers will still be missed - this model should support, not replace, the existing
+  RFM-based segmentation from Notebook 04.
+
+Report Generated: 2026-07-16 02:38:15
+================================================================================
