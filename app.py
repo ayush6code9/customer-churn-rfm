@@ -52,7 +52,12 @@ def load_csv(path):
 
 @st.cache_resource
 def load_churn_model():
-    model_path = OUTPUTS_MODELS / "churn_model_rf.pkl"
+    # Notebook 06 saves the best of Logistic Regression / tuned Random Forest / XGBoost
+    # as churn_model_best.pkl. Falls back to the older churn_model_rf.pkl name for
+    # compatibility with projects still on the earlier version of Notebook 06.
+    model_path = OUTPUTS_MODELS / "churn_model_best.pkl"
+    if not model_path.exists():
+        model_path = OUTPUTS_MODELS / "churn_model_rf.pkl"
     scaler_path = OUTPUTS_MODELS / "churn_scaler.pkl"
     cols_path = OUTPUTS_MODELS / "churn_feature_columns.pkl"
     if model_path.exists() and scaler_path.exists() and cols_path.exists():
