@@ -38,5 +38,5 @@ RECOMMENDATION:
   segmentation from Notebook 04. SHAP explanations for individual customers are available
   in outputs/figures/ for use in retention team conversations.
 
-Report Generated: 2026-07-17 01:53:18
+Report Generated: 2026-07-17 15:06:44
 ================================================================================
