@@ -1,6 +1,7 @@
 # ==========================================================
 # Retail & Marketing Analytics Project
 # Python Version: 3.11+
+# For local enviornment development and testing
 # ==========================================================
 
 # Core Data Analysis
